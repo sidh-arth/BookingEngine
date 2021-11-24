@@ -85,7 +85,7 @@ http://localhost:8000/api/v1/units/?max_price=100&check_in=2021-12-09&check_out=
     }
 
 
-## API Samples
+## API Samples 
 
 1. Check Room Availability API :
     ```   
@@ -136,29 +136,29 @@ http://localhost:8000/api/v1/units/?max_price=100&check_in=2021-12-09&check_out=
 .
 2. Add Reservation/Booking API
     ```
-    Request URL - http://localhost:8000/api/reservation/
-    Request Method - POST
-    Request body/json -
-         {
-            "property_booked": 4,   #id of Booking Info object
-            "check_in": "2021-11-27",
-            "check_out": "2021-11-29"
-         }
-         
-    Response sample -
-        {
-            "status_code": "201",
-            "status": true,
-            "message": "Booking successful",
-            "data": {
-                "property_booked": 4,
+        Request URL - http://localhost:8000/api/reservation/
+        Request Method - POST
+        Request body/json -
+             {
+                "property_booked": 4,   #id of Booking Info object
                 "check_in": "2021-11-27",
-                "check_out": "2021-11-29",
-                "listing_type": "Hotel",
-                "title": "Hotel Lux 5***",
-                "country": "UK",
-                "city": "London",
-                "price": 50
+                "check_out": "2021-11-29"
+             }
+             
+        Response sample -
+            {
+                "status_code": "201",
+                "status": true,
+                "message": "Booking successful",
+                "data": {
+                    "property_booked": 4,
+                    "check_in": "2021-11-27",
+                    "check_out": "2021-11-29",
+                    "listing_type": "Hotel",
+                    "title": "Hotel Lux 5***",
+                    "country": "UK",
+                    "city": "London",
+                    "price": 50
+                }
             }
-        }
         
